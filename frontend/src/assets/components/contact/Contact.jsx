@@ -16,79 +16,83 @@ const Contact = () => {
     <>
       <Nev />
 
-      <section className="bg-slate-100 min-h-screen py-16">
+      <section className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white py-16">
 
         <div className="max-w-7xl mx-auto px-6">
 
-          {/* PAGE HEADER */}
+          {/* HEADER */}
 
-          <div className="text-center mb-14">
-            <h1 className="text-4xl font-bold text-slate-900">
-              Contact & Leadership
+          <div className="text-center mb-16">
+
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+              Contact <span className="text-cyan-400">Leadership</span>
             </h1>
-            <p className="text-slate-600 mt-3 max-w-xl mx-auto">
+
+            <p className="text-slate-400 mt-4 max-w-xl mx-auto">
               Connect with the leadership team of Stinchar for partnerships,
-              material supply inquiries, or technology collaboration.
+              construction supply collaboration, and digital innovation in the
+              construction ecosystem.
             </p>
+
           </div>
 
-          {/* MAIN GRID */}
+          {/* GRID */}
 
           <div className="grid md:grid-cols-2 gap-10">
 
-            {/* ================= LEFT PROFILE PANEL ================= */}
+            {/* PROFILE CARD */}
 
-            <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-8">
+            <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-10 shadow-xl">
 
               <div className="flex flex-col items-center text-center">
 
                 <img
                   src="https://i.ibb.co/ynzJtjbY/Whats-App-Image-2026-03-01-at-1-52-34-PM.jpg"
                   alt="NK Saini"
-                  className="w-40 h-40 rounded-full object-cover border-4 border-emerald-500"
+                  className="w-40 h-40 rounded-full object-cover border-4 border-cyan-400 shadow-lg"
                 />
 
-                <h2 className="text-2xl font-bold text-slate-900 mt-4">
+                <h2 className="text-2xl font-bold mt-5">
                   NK Saini
                 </h2>
 
-                <p className="text-emerald-600 font-medium flex items-center gap-2 mt-1">
+                <p className="text-cyan-400 flex items-center gap-2 mt-1">
                   <FaUserTie />
                   CEO & Founder
                 </p>
 
-                <p className="text-sm text-slate-500 mt-1">
+                <p className="text-slate-400 text-sm mt-1">
                   Data Scientist • MCA Graduate
                 </p>
 
               </div>
 
-              <div className="mt-6 text-slate-600 text-sm leading-relaxed">
+              <div className="mt-6 text-slate-300 text-sm leading-relaxed">
 
                 <p>
-                  NK Saini is the founder of Stinchar, a technology-driven
-                  platform designed to modernize the construction supply
-                  chain. His vision is to connect builders, suppliers,
-                  and logistics systems through a digital ecosystem.
+                  NK Saini founded Stinchar to bring technology innovation into
+                  the construction supply ecosystem. The goal is to connect
+                  builders, architects, suppliers, and logistics through one
+                  intelligent digital platform.
                 </p>
 
                 <p className="mt-3">
-                  With expertise in data science and software systems,
-                  he focuses on creating efficient, transparent,
-                  and scalable solutions for the construction industry.
+                  His work focuses on building scalable systems that improve
+                  transparency, reduce supply delays, and optimize project
+                  management through data and software.
                 </p>
 
               </div>
 
-              <div className="mt-8 space-y-3">
+              <div className="mt-8 space-y-3 text-sm">
 
-                <div className="flex items-center gap-3 text-sm">
-                  <FaPhoneAlt className="text-emerald-600" />
+                <div className="flex items-center gap-3 text-slate-300">
+                  <FaPhoneAlt className="text-cyan-400" />
                   +91 6377011413
                 </div>
 
-                <div className="flex items-center gap-3 text-sm">
-                  <FaEnvelope className="text-emerald-600" />
+                <div className="flex items-center gap-3 text-slate-300">
+                  <FaEnvelope className="text-cyan-400" />
                   officialwhitehk@gmail.com
                 </div>
 
@@ -96,39 +100,36 @@ const Contact = () => {
 
             </div>
 
-            {/* ================= CONTACT FORM ================= */}
+            {/* CONTACT FORM */}
 
-            <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-8">
+            <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-10 shadow-xl">
 
-              <h3 className="text-2xl font-semibold text-slate-900 mb-6">
-                Send a Message
+              <h3 className="text-2xl font-semibold mb-6">
+                Send Message
               </h3>
 
-              <form
-                onSubmit={handleSubmit}
-                className="space-y-4"
-              >
+              <form onSubmit={handleSubmit} className="space-y-4">
 
                 <input
                   type="text"
                   placeholder="Full Name"
                   required
-                  className="w-full border border-slate-300 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-emerald-500 outline-none"
+                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:border-cyan-400 outline-none"
                 />
 
                 <input
                   type="email"
                   placeholder="Email Address"
                   required
-                  className="w-full border border-slate-300 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-emerald-500 outline-none"
+                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:border-cyan-400 outline-none"
                 />
 
                 <select
                   required
-                  className="w-full border border-slate-300 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-emerald-500 outline-none"
+                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:border-cyan-400 outline-none"
                 >
-                  <option value="">Select Inquiry Type</option>
-                  <option>Supply Chain Partnership</option>
+                  <option value="">Select Inquiry</option>
+                  <option>Supply Partnership</option>
                   <option>Construction Materials</option>
                   <option>Project Consultation</option>
                   <option>Other</option>
@@ -138,7 +139,7 @@ const Contact = () => {
                   rows="4"
                   placeholder="Write your message"
                   required
-                  className="w-full border border-slate-300 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-emerald-500 outline-none"
+                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:border-cyan-400 outline-none"
                 />
 
                 {submitted ? (
@@ -146,7 +147,7 @@ const Contact = () => {
                   <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    className="text-emerald-600 text-sm font-medium"
+                    className="text-green-400 text-sm"
                   >
                     ✔ Message sent successfully
                   </motion.p>
@@ -154,9 +155,10 @@ const Contact = () => {
                 ) : (
 
                   <motion.button
-                    whileTap={{ scale: 0.97 }}
+                    whileTap={{ scale: 0.95 }}
+                    whileHover={{ scale: 1.03 }}
                     type="submit"
-                    className="w-full bg-emerald-600 text-white py-3 rounded-lg font-semibold hover:bg-emerald-700 transition"
+                    className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 py-3 rounded-xl font-semibold shadow-lg hover:opacity-90 transition"
                   >
                     Send Message
                   </motion.button>
@@ -171,10 +173,8 @@ const Contact = () => {
 
           {/* FOOTER */}
 
-          <div className="text-center mt-16">
-            <p className="text-xs text-slate-500 uppercase tracking-widest">
-              © {new Date().getFullYear()} Stinchar
-            </p>
+          <div className="text-center mt-16 text-xs text-slate-500 tracking-widest">
+            © {new Date().getFullYear()} STINCHAR
           </div>
 
         </div>
